@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="http://localhost:5005/0/ServiceModel/RamyaGetFormDetailsService.svc/Test" method="GET">
+        <div>
+            <label for="Name">Name</label>
+            <input name="Name" id="Name"/>
+        </div>   
+        <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+        <br/>
+        <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
