@@ -7,7 +7,7 @@
         var response = grecaptcha.getResponse();
         let name = document.getElementById("Name").value;
         let endurl = `http://localhost:5005/0/ServiceModel/RamyaGetFormDetailsService.svc/Test?Name=${name}&gRecaptchaResponse=${response}`
-        let response = fetch(endurl)
+        let apiResponse = fetch(endurl)
           .then(data => {
             console.log(data.json()); 
           })
